@@ -1,0 +1,24 @@
+ul.marquee{
+	display:block;
+	padding:0;
+	margin:0;
+	list-style:none;
+	line-height:1;
+	position:relative;
+	overflow:hidden;
+	width:100%;height:22px;
+	/*background-color:#333333;
+	border:1px solid #08084d;
+	*/
+}
+
+ul.marquee li{
+	position:absolute;
+	top:-999em;left:0;
+	display:block;
+	white-space:nowrap;
+	font:17px Arial,Helvetica,sans-serif;
+	font-weight:bold;
+	color:#ffffff;
+	padding:3px 5px;
+}

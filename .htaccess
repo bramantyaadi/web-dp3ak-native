@@ -1,0 +1,64 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteRule ^$ media.php?module=home [L]
+RewriteRule ^index\.html$ media.php?module=home [L]
+RewriteRule ^galeri-(.*)\.html$ zoom.php?id=$1 [L]
+RewriteRule ^baca-berita-(.*)-(.*)\.html$ media.php?module=detailberita&id=$1 [L]
+RewriteRule ^arsip-agenda\.html$ media.php?module=semuaagenda&id=$1 [L]
+#RewriteRule ^statis-(.*)-(.*)\.html$ media.php?module=halamanstatis&id=$1 [L]
+RewriteRule ^arsip-pengumuman\.html$ media.php?module=semuapengumuman&id=$1 [L]
+#RewriteRule ^halpengumuman-(.*)\.html$ media.php?module=semuapengumuman&halpengumuman=$1 [L]
+#RewriteRule ^baca-pengumuman-(.*)-(.*)\.html$ media.php?module=detailpengumuman&id=$1 [L]
+#RewriteRule ^hasil-pencarian\.html$ media.php?module=hasilcari&id=$1 [L]
+RewriteRule ^indeks-berita\.html$ media.php?module=indeksberita&id=$1 [L]
+#RewriteRule ^hasil-poling\.html$ media.php?module=hasilpoling&id=$1 [L]
+#RewriteRule ^lihat-poling\.html$ media.php?module=lihatpoling&id=$1 [L]
+RewriteRule ^profil-kami\.html$ media.php?module=profilkami&id=$1 [L]
+RewriteRule ^hubungi-kami\.html$ media.php?module=hubungikami&id=$1 [L]
+RewriteRule ^hubungi-aksi\.html$ media.php?module=hubungiaksi&id=$1 [L]
+RewriteRule ^semua-berita\.html$ media.php?module=semuaberita&id=$1 [L]
+RewriteRule ^halberita-(.*)\.html$ media.php?module=semuaberita&halberita=$1 [L]
+#RewriteRule ^kategori-([0-9]+)-(.*)\.html$ media.php?module=detailkategori&id=$1 [L]
+#RewriteRule ^halkategori-([0-9]+)-(.*)\.html$ media.php?module=detailkategori&id=$1&halkategori=$2 [L]
+RewriteRule ^semua-download\.html$ media.php?module=semuadownload&id=$1 [L]
+#RewriteRule ^haldownload-(.*)\.html$ media.php?module=semuadownload&haldownload=$1 [L]
+RewriteRule ^arsip-foto\.html$ media.php?module=semuaalbum&id=$1 [L]
+#RewriteRule ^halalbum-(.*)\.html$ media.php?module=semuaalbum&halalbum=$1 [L]
+#RewriteRule ^lihat-foto-([0-9]+)-(.*)\.html$ media.php?module=detailalbum&id=$1 [L]
+#RewriteRule ^halgaleri-([0-9]+)-(.*)\.html$ media.php?module=detailalbum&id=$1&halgaleri=$2 [L]
+RewriteRule ^halkomentar-(.*)-([0-9]+)\.html$ media.php?module=detailberita&id=$1&halkomentar=$2 [L]
+
+
+RewriteRule ^artikel$ media.php?page=artikel [L]
+RewriteRule ^halartikel-(.*)\.html$ media.php?page=artikel&halartikel=$1 [L]
+RewriteRule ^detail-artikel-(.*)-(.*)\.html$ media.php?page=detailartikel&id=$1 [L]
+RewriteRule ^statis-(.*)-(.*)\.html$ media.php?page=halaman&id=$1 [L]
+RewriteRule ^daftar-agenda$ media.php?page=agenda&id=$1 [L]
+RewriteRule ^direktori-pengumuman$ media.php?page=pengumuman&id=$1 [L]
+RewriteRule ^baca-pengumuman-(.*)-(.*)\.html$ media.php?page=detailpengumuman&id=$1 [L]
+RewriteRule ^halpengumuman-(.*)\.html$ media.php?page=pengumuman&halpengumuman=$1 [L]
+RewriteRule ^direktori-galeri$ media.php?page=galeri&id=$1 [L]
+RewriteRule ^lihat-foto-([0-9]+)-(.*)\.html$ media.php?page=detailgaleri&id=$1 [L]
+RewriteRule ^halalbum-(.*)\.html$ media.php?page=galeri&halalbum=$1 [L]
+RewriteRule ^halgaleri-([0-9]+)-(.*)\.html$ media.php?page=detailgaleri&id=$1&halgaleri=$2 [L]
+RewriteRule ^daftar-download$ media.php?page=download&id=$1 [L]
+RewriteRule ^haldownload-(.*)$ media.php?page=download&haldownload=$1 [L]
+RewriteRule ^kategori-([0-9]+)-(.*)$ media.php?page=kategori&id=$1 [L]
+RewriteRule ^halkategori-([0-9]+)-(.*)\.html$ media.php?page=kategori&id=$1&halkategori=$2 [L]
+RewriteRule ^ppid$ media.php?page=ppid [L]
+#RewriteRule ^prosesppid$ media.php?page=prosesppid [L]
+RewriteRule ^hasil-poling\.html$ media.php?page=polling&id=$1 [L]
+RewriteRule ^lihat-poling\.html$ media.php?page=lihatpolling&id=$1 [L]
+RewriteRule ^situs-terkait$ media.php?page=situsterkait&id=$1 [L]
+RewriteRule ^hasil-pencarian$ media.php?page=hasilcari&id=$1 [L]
+
+Options All -Indexes
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php73” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php73 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

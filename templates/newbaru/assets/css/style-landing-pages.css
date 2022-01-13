@@ -1,0 +1,171 @@
+html, body {
+	font-family: 'Lato', Arial, sans-serif;
+	background: linear-gradient(to top, rgba(245, 246, 252, 0.73), rgba(245, 246, 252, 0.73)), url(../../assets/img/back.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+} 
+.container a:hover {
+	text-decoration:none;
+}
+.title {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 24px;
+	font-weight: bolder;
+	position: relative;
+	top:-70px;
+	left: 45px;
+}
+.title-2 {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 18px;
+	font-weight: bolder;
+	position: relative;
+	
+	
+}
+.desc {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 14px;
+	position: relative;
+	top: -85px;
+	left: 45px;
+	font-weight: 700;
+}
+.desc-2 {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 14px;
+	position: relative;
+	top: -15px;
+	font-weight: 700;
+}
+.wrap {
+	width:960px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 40px;
+
+}
+
+.has-search .form-control-feedback {
+    right: initial;
+    left: 0;
+    color: #ccc;
+}
+
+.has-search .form-control {
+    padding-right: 12px;
+    padding-left: 34px;
+}
+.cust-grid{
+
+	display: flex;
+	
+	justify-content: center;
+	
+	flex-flow:row wrap;
+	
+	}
+	
+	.cust-grid-col{
+	
+	float:none;
+	
+	}
+
+
+@media screen and (max-width:959px){
+    .wrap{
+        width   : 100%;
+	}
+	.desc-2 {
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 14px;
+		position: relative;
+		top: -15px;
+		font-weight: 700;
+	}
+   
+}
+/******************************************
+    MEDIA QUERIES ( Responsive )
+*******************************************/
+@media screen and (max-width:1080px){
+        .wrap {
+			width   : 100%;
+			padding-top: 20px;
+			
+       
+		}
+		.desc-2 {
+			font-family: "Open Sans", Arial, sans-serif;
+			font-size: 14px;
+			position: relative;
+			top: -15px;
+			font-weight: 700;
+		}
+}
+
+/* untuk ukuran layar 700px kebawah */
+@media screen and (max-width: 780px) {
+
+    .wrap {
+		width   : 100%;
+		padding-top: 20px;
+        text-align: center;
+	}
+	.desc-2 {
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 14px;
+		position: relative;
+		top: -15px;
+		font-weight: 700;
+	}
+    
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+	.example {background: red;}
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+	.example {background: green;}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+	.example {background: blue;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+	.example {background: orange;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+	.example {background: pink;}
+  }
+  .video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
